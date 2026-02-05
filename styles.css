@@ -1,0 +1,3 @@
+/* New design */
+:root{--primary:#4a90e2;--accent:#ff5a5f;--bg:#fafafa;--text:#333}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}.container{max-width:960px;margin:auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}.card{background:white;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);overflow:hidden;transition:transform .3s}.card:hover{transform:translateY(-4px)}.card img{width:100%;display:block}.btn{background:var(--primary);color:white;padding:.75rem 1.5rem;border:none;border-radius:.25rem;cursor:pointer;text-align:center;transition:background .3s}.btn:hover{background:var(--accent)}@media(max-width:600px){.container{grid-template-columns:1fr}}

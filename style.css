@@ -1,3 +1,25 @@
-body{font-family:Arial,sans-serif;background:#f9f9f9;margin:40px}
-h1{color:#333}
-p{line-height:1.6}
+/* Basic reset and typography */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f9f9f9;color:#333;line-height:1.6}
+header.hero{text-align:center;padding:4rem 2rem;background:#004c99;color:white}
+header.hero h1{font-size:3rem;margin-bottom:.5rem}
+header.hero p{font-size:1.25rem;font-weight:500}
+.cta{display:inline-block;margin-top:1.5rem;padding:.75rem 1.5rem;background:#ffcc00;color:#004c99;border-radius:4px;text-decoration:none;font-weight:bold}
+.switch{position:absolute;top:1.5rem;right:2rem;width:50px;height:24px;display:flex;align-items:center}
+.switch input{opacity:0;width:0;height:0}
+.slider{position:absolute;cursor:pointer;background:#ccc;border-radius:34px;transition:.4s;left:0;top:0;bottom:0;right:0}
+.slider::before{content:"";position:absolute;background:white;border-radius:50%;height:18px;width:18px;bottom:3px;left:3px;transition:.4s}
+input:checked + .slider{background:#004c99}
+input:checked + .slider::before{transform:translateX(26px)}
+main{max-width:960px;margin:auto;padding:2rem}
+section{margin-bottom:3rem}
+#about p{font-size:1.1rem}
+.timeline{list-style:none}
+.timeline li{border-left:4px solid #004c99;padding-left:1rem;position:relative;margin-bottom:1.5rem}
+.timeline li::before{content:"";position:absolute;background:#004c99;width:12px;height:12px;border-radius:50%;left:-7px;top:.2em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.grid article{background:white;padding:1rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1)}
+.grid img{width:100%;height:auto;border-radius:4px;margin-bottom:.75rem}
+.skill-list{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem}
+.skill-list span{background:#004c99;color:white;padding:.25rem .75rem;border-radius:20px;font-size:.9rem}
+footer{text-align:center;padding:1.5rem;background:#222;color:#bbb}
