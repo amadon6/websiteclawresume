@@ -1,0 +1,12 @@
+{
+  "name": "Prune Main Sessions",
+  "schedule": {
+    "kind": "every",
+    "everyMs": 1800000
+  },
+  "payload": {
+    "kind": "agentTurn",
+    "message": "prune main sessions"
+  },
+  "enabled": true
+}
