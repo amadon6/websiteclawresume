@@ -1,1 +1,1 @@
-Add note: Skills are invoked via OpenClaw runtime, not as standalone binaries.
+Add note: The tools‑kit repo lives at `~/common-tasks/`. Use this path in any future OpenClaw session.
