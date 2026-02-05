@@ -1,3 +1,18 @@
-/* New design */
-:root{--primary:#4a90e2;--accent:#ff5a5f;--bg:#fafafa;--text:#333}
-body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}.container{max-width:960px;margin:auto;padding:1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}.card{background:white;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);overflow:hidden;transition:transform .3s}.card:hover{transform:translateY(-4px)}.card img{width:100%;display:block}.btn{background:var(--primary);color:white;padding:.75rem 1.5rem;border:none;border-radius:.25rem;cursor:pointer;text-align:center;transition:background .3s}.btn:hover{background:var(--accent)}@media(max-width:600px){.container{grid-template-columns:1fr}}
+/* Basic reset */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:sans-serif;background:#f5f7fa;color:#333}
+header#hero{background:#4a90e2;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white}
+header h1{font-size:3rem;margin-bottom:.5rem}
+header p{font-size:1.25rem;margin-bottom:1.5rem}
+.scroll{background:#fff;color:#4a90e2;padding:.75rem 1.5rem;border-radius:30px;text-decoration:none;font-weight:bold;transition:transform .3s}
+.scroll:hover{transform:scale(1.05)}
+section{padding:4rem 2rem}
+#about h2,#experience h2,#skills h2,#education h2{margin-bottom:1rem;color:#4a90e2}
+ul{list-style:none;line-height:1.6}
+.skill-list li{background:#e3f0ff;padding:.5rem 1rem;margin: .25rem 0;border-radius:5px}
+footer{text-align:center;background:#222;color:white;padding:2rem}
+footer a{color:#4a90e2;text-decoration:none;margin:0 10px}
+#downloadResume{background:#4a90e2;color:white;border:none;padding:.75rem 1.5rem;border-radius:30px;cursor:pointer;font-weight:bold;margin-top:1rem}
+#downloadResume:hover{opacity:.9}
+/* Smooth scroll */
+html{scroll-behavior:smooth}
