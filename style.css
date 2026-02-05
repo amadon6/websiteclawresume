@@ -40,3 +40,7 @@ a:hover{text-decoration:underline;color:var(--accent)}
 
 /* Utility */
 .container{padding:2rem;background:#fff;border-radius:.5rem;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+
+/* Card layout */
+.card {background:white;border-radius:8px;padding:16px;margin-bottom:20px;box-shadow:0 4px 8px rgba(0,0,0,0.1);transition:transform .2s}
+.card:hover{transform:scale(1.02)}
